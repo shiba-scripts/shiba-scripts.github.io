@@ -1,80 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset standaardmarges en padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Basisstijlen voor de hele pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
 }
 
 nav {
-    margin-top: 1em;
+    margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    margin: 0 1em;
-}
-
-nav a.active {
-    font-weight: bold;
-}
-
-main {
-    padding: 2em;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-section h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5em;
-}
-
-script-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
     padding: 10px 20px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
+    margin: 0 10px;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: #4CAF50;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+nav a:hover {
     background-color: #45a049;
 }
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-}
-
 
 .search-container {
     margin-top: 20px;
@@ -84,8 +48,16 @@ footer {
 .search-container input[type=text] {
     padding: 10px;
     width: 60%;
-    border: 1px solid #ddd;
+    border: none;
+    border-bottom: 2px solid #4CAF50;
+    background-color: #f2f2f2;
     margin-right: 10px;
+    transition: border-bottom 0.3s ease;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #45a049;
 }
 
 .search-container button {
@@ -93,9 +65,35 @@ footer {
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .search-container button:hover {
     background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
 }
