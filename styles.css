@@ -13,25 +13,18 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+nav {
+    margin-top: 1em;
 }
 
-nav ul li {
+nav a {
+    color: white;
+    text-decoration: none;
     margin: 0 1em;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav a.active {
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -51,11 +44,28 @@ section h2 {
     padding-bottom: 0.5em;
 }
 
-pre {
-    background-color: #f4f4f4;
-    padding: 1em;
-    border-left: 3px solid #4CAF50;
-    overflow: auto;
+script-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
 }
 
 footer {
@@ -63,4 +73,29 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
+}
+
+
+.search-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
 }

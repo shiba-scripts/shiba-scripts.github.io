@@ -10,13 +10,15 @@
     <header>
         <h1>Script Documentation Hub</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="script1.html">Script 1</a></li>
-                <li><a href="script2.html">Script 2</a></li>
-                <!-- Voeg hier meer scripts toe -->
-            </ul>
+            <a href="index.html" class="active">Home</a>
+            <a href="script1.html">Script 1</a>
+            <a href="script2.html">Script 2</a>
+            <!-- Voeg hier meer scripts toe -->
         </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchDocumentation()">Search</button>
+        </div>
     </header>
     <main>
         <section id="introduction">
@@ -25,11 +27,11 @@
         </section>
         <section id="scripts">
             <h2>Available Scripts</h2>
-            <ul>
-                <li><a href="script1.html">Script 1</a> - Description of Script 1</li>
-                <li><a href="script2.html">Script 2</a> - Description of Script 2</li>
+            <div class="script-buttons">
+                <a href="script1.html" class="button">Script 1</a>
+                <a href="script2.html" class="button">Script 2</a>
                 <!-- Voeg hier meer scripts toe -->
-            </ul>
+            </div>
         </section>
     </main>
     <footer>
