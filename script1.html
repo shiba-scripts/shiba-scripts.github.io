@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 1 Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Script 1 Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="script1.html">Script 1</a></li>
+                <li><a href="script2.html">Script 2</a></li>
+                <!-- Voeg hier meer scripts toe -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the documentation for Script 1. This page will guide you through everything you need to know to use and configure Script 1 effectively.</p>
+        </section>
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>Step-by-step instructions to install the script.</p>
+            <pre><code>fx_version 'cerulean'
+game 'gta5'
+
+author 'Cas.vdv'
+description 'Script to call in at a specific location and send a notification to a specific job'
+version '1.0'
+
+shared_script 'config.lua'
+
+server_script 'server.lua'
+
+client_scripts {
+    'client.lua',
+    'editable.lua',
+    'dispatch.lua'
+}
+escrow_ignore {
+    'config.lua',
+    'editable.lua',
+    'dispatch.lua'
+}</code></pre>
+        </section>
+        <section id="configuration">
+            <h2>Configuration</h2>
+            <p>Details on how to configure the script to suit your needs.</p>
+        </section>
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Instructions on how to use the script.</p>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Code examples to help you understand how to implement the script.</p>
+        </section>
+        <section id="api">
+            <h2>API</h2>
+            <p>Documentation for the API endpoints provided by the script.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cas.vdv. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
