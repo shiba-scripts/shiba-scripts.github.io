@@ -34,6 +34,9 @@ nav a {
     border-radius: 5px;
     background-color: #4CAF50;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -68,6 +71,8 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .search-container button:hover {
